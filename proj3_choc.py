@@ -73,10 +73,7 @@ def interactive_prompt():
     response = ''
     while response != 'exit':
         response = input('Enter a command: ')
-        if response == '':
-            print()
-            continue
-        elif response == ' ':
+        if response.strip() == '':
             print()
             continue
         elif response == 'help':
